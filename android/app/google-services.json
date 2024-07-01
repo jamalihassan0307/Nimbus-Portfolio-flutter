@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "379082405098",
+    "project_id": "doctor-appointment-app-a9ca9",
+    "storage_bucket": "doctor-appointment-app-a9ca9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379082405098:android:f388a04d08397feaf25393",
+        "android_client_info": {
+          "package_name": "com.example.doctor_appointment_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2AJgG13VsNmU1NtXhtw0FF5Lu4oL6nHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379082405098:android:0efd4c09d5a37274f25393",
+        "android_client_info": {
+          "package_name": "com.example.nimbus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2AJgG13VsNmU1NtXhtw0FF5Lu4oL6nHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379082405098:android:3415415e59d2506ef25393",
+        "android_client_info": {
+          "package_name": "com.example.rest_api_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2AJgG13VsNmU1NtXhtw0FF5Lu4oL6nHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379082405098:android:25e3209edab293cef25393",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2AJgG13VsNmU1NtXhtw0FF5Lu4oL6nHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
