@@ -281,8 +281,47 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                       ],
                     ),
                   ),
+          //             StreamBuilder<DocumentSnapshot>(
+          //   stream: FirebaseFirestore.instance.collection('me').doc("me").snapshots(),
+          //   builder: (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
+          //     if (snapshot.connectionState == ConnectionState.waiting) {
+          //       return Center(child: SpinKitCircle(color: Colors.blue));
+          //     } else if (snapshot.hasError) {
+          //       print("errror${snapshot.error}");
+          //       return Text('Error: ${snapshot.error}');
+          //     } else if (!snapshot.data!.exists) {
+          //       print("No data found");
+          //       return Container();
+          //     } else {
+          //       Map<String, dynamic>? data = snapshot.data!.data() as Map<String, dynamic>?;
+          //       if (data == null || data['image'] == null) {
+          //         return Container();
+          //       }
+          //       String imageUrl = data['image'];
+          //       double imageR=double.tryParse(data['R'].toString()) ??0.50;
+          //       double imageB=double.tryParse(data['B'].toString()) ??150.0;
+          //       double imageH=double.tryParse(data['H'].toString()) ??150.0;
+          //       print("Image URL: $imageUrl");
+          
+          //       return  Positioned(
+          //         right: -(sizeOfBlobSm * imageR),
+          //         bottom:imageB,
+
+          //         child: HeaderImage(
+          //           image: imageUrl,
+          //           controller: _controller,
+                    
+          //           globeSize: sizeOfGoldenGlobe,
+          //           imageHeight: heightOfBlobAndGlobe * 2,
+          //           imageWidth: heightOfBlobAndGlobe*2,
+          //         ),
+          //       );
+          //     }
+          //   },
+          // )
                 ],
               ),
+
               const SizedBox(height: 150),
               Container(
                 margin: EdgeInsets.only(left: (sizeOfBlobSm * 0.35)),

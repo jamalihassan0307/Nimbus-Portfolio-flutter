@@ -171,11 +171,22 @@ class Data {
       circleBgColor: AppColors.grey50,
     ),
   ];
+  // static getdata() async {
+  //   var f = await FirebaseFirestore.instance.collection("projects").get();
+  //   if (f.docs.isEmpty) {
+  //     f.docs.forEach((element) async {
+  //       ProjectData data =
+  //           ProjectData.fromMap(await element.data() as Map<String, dynamic>);
+  //       allProjects.add(data);
+  //       print("34242${data}");
+  //     });
+  //   }
+  // }
 
   static List<ProjectData> allProjects = [
     ProjectData(
       title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
       width: 0.5,
       mobileHeight: 0.3,
@@ -206,7 +217,7 @@ class Data {
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
       width: 0.475,
       mobileHeight: 0.3,
@@ -231,14 +242,14 @@ class Data {
   static List<ProjectData> photograhy = [
     ProjectData(
       title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
       width: 0.5,
       mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
       width: 0.475,
       mobileHeight: 0.3,

@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^5.0.0
   auto_route: 
+  flutter_spinkit:
   # firebase_core_web: ^2.2.2
   firebase_auth: 
   cloud_firestore: 

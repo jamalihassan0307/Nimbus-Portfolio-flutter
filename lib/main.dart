@@ -4,7 +4,7 @@ import 'package:nimbus/const/app_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:nimbus/view/home_page.dart';
 import 'package:nimbus/values/values.dart';
-import 'dart:ui';
+// import 'dart:ui';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +33,7 @@ class Nimbus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Data.getdata();
     return MaterialApp(
       theme: AppTheme.lightThemeData,
       debugShowCheckedModeBanner: false,

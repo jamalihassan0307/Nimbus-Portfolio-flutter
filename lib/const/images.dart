@@ -29,9 +29,9 @@ class ImagePath {
   static const String DOTS_GLOBE_YELLOW_2 = "$imageDir/dots_globe_yellow2.png";
 
   // Dev
-  static const String DEV_ABOUT_ME = "$imageDir/dev_aboutme.jpg";
+  static const String DEV_ABOUT_ME = "$imageDir/meabout.jpg";
   // static const String DEV_ABOUT_ME = "$imageDir/dev_aboutme.png";
-  static const String DEV_HEADER = "$imageDir/dev_header.jpg";
+  static const String me = "$imageDir/me.jpg";
   // static const String DEV_HEADER = "$imageDir/dev_header.png";
   // static const String DEV_AWARD = "$imageDir/dev_award.png";
   static const String DEV_AWARD = "$imageDir/dev_award.jpg";

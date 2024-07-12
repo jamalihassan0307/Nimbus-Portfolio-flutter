@@ -50,7 +50,7 @@ class _HeaderImageState extends State<HeaderImage> {
           ),
         ),
         Image.asset(
-          ImagePath.DEV_HEADER,
+          ImagePath.me,
           width: widget.imageWidth,
           height: widget.imageHeight,
           fit: widget.fit,
@@ -73,6 +73,7 @@ List<Widget> buildSocialIcons(List<SocialButtonData> socialItems) {
       //   ),
       // ),
       NimBusLink(
+        
         url: socialItems[index].url,
         child: Icon(
           socialItems[index].iconData,

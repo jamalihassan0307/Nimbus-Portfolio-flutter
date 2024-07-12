@@ -1,6 +1,6 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, prefer_typing_uninitialized_variables
 
-import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nimbus/presentation/layout/adaptive.dart';
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage>
 
   @override
   void initState() {
-    
+    // getdata();
     _scrollController.addListener(() {
       if (_scrollController.position.pixels < 100) {
         _controller.reverse();
@@ -70,8 +70,16 @@ class _HomePageState extends State<HomePage>
     });
     super.initState();
   }
-
-  var height, width;
+// getdata()async{
+//   print("skujhgerugh");
+//  var firebase= FirebaseFirestore.instance;
+//  await firebase.collection("collectionPath").doc("1").set({
+//   "name":"awah0307@",
+//   "password":"awah0307@",
+//  });
+//   print("skujhgerugh");
+// }
+var height, width;
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
@@ -200,11 +208,13 @@ class _HomePageState extends State<HomePage>
                             child: const AwardsSection(),
                           ),
                           SpaceH40(),
+                          // Container(
+                          //   key: navItems[5].key,
+                          //   child: const BlogSection(),
+                          // ),
                           Container(
                             key: navItems[5].key,
-                            child: const BlogSection(),
-                          ),
-                          const FooterSection(),
+                            child:FooterSection(),)
                         ],
                       )
                     ],
