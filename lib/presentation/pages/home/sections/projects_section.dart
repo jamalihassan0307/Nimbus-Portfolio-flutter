@@ -5,6 +5,7 @@ import 'package:nimbus/presentation/widgets/content_area.dart';
 import 'package:nimbus/presentation/widgets/nimbus_info_section.dart';
 import 'package:nimbus/presentation/widgets/project_item.dart';
 import 'package:nimbus/presentation/widgets/spaces.dart';
+import 'package:nimbus/utils/functions.dart';
 import 'package:nimbus/values/values.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
@@ -110,7 +111,10 @@ class _ProjectsSectionState extends State<ProjectsSection>
                     NimbusButton(
                       buttonTitle: StringConst.ALL_PROJECTS,
                       buttonColor: AppColors.primaryColor,
-                      onPressed: () {},
+                      onPressed: () {
+           openUrlLink(StringConst.GITHUB_URL);
+
+                      },
                     ),
                     SpaceH40(),
                     Wrap(
@@ -159,7 +163,10 @@ class _ProjectsSectionState extends State<ProjectsSection>
                           NimbusButton(
                             buttonTitle: StringConst.ALL_PROJECTS,
                             buttonColor: AppColors.primaryColor,
-                            onPressed: () {},
+                            onPressed: () {
+                          openUrlLink(StringConst.GITHUB_URL);    
+                            },
+                            
                           ),
                         ],
                       ),

@@ -63,6 +63,11 @@ class Data {
       skill: StringConst.SKILLS_3,
       level: 70,
     ),
+    
+    SkillLevelData(
+      skill: StringConst.SKILLS_4,
+      level: 20,
+    ),
   ];
 
   static List<SkillCardData> skillCardData = [
@@ -72,9 +77,9 @@ class Data {
       iconData: FontAwesomeIcons.compress,
     ),
     SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+        title: "SQL",
+        description: StringConst.SKILLS_1_DESC,
+        iconData: Icons.pages_outlined), 
     SkillCardData(
       title: StringConst.SKILLS_2,
       description: StringConst.SKILLS_2_DESC,
@@ -91,23 +96,23 @@ class Data {
       iconData: FontAwesomeIcons.recordVinyl,
     ),
     SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+        title: "JAVA",
+        description: "JAVA",
+        iconData: Icons.pages_outlined), 
   ];
   static List<StatItemData> statItemsData = [
-    StatItemData(value: 120, subtitle: StringConst.HAPPY_CLIENTS),
-    StatItemData(value: 10, subtitle: StringConst.YEARS_OF_EXPERIENCE),
-    StatItemData(value: 230, subtitle: StringConst.INCREDIBLE_PROJECTS),
-    StatItemData(value: 18, subtitle: StringConst.AWARD_WINNING),
+    StatItemData(value: 5, subtitle: StringConst.HAPPY_CLIENTS),
+    StatItemData(value: 2, subtitle: StringConst.YEARS_OF_EXPERIENCE),
+    StatItemData(value: 7, subtitle: StringConst.INCREDIBLE_PROJECTS),
+    StatItemData(value: 0, subtitle: StringConst.AWARD_WINNING),
   ];
 
   static List<ProjectCategoryData> projectCategories = [
     ProjectCategoryData(title: StringConst.ALL, number: 6, isSelected: true),
     ProjectCategoryData(title: StringConst.BRANDING, number: 1),
     ProjectCategoryData(title: StringConst.PACKAGING, number: 1),
-    ProjectCategoryData(title: StringConst.PHOTOGRAPHER, number: 2),
-    ProjectCategoryData(title: StringConst.WEB_DESIGN, number: 3),
+    ProjectCategoryData(title: StringConst.Andriod_app, number: 2),
+    ProjectCategoryData(title: StringConst.Flutter, number: 3),
   ];
 
   static List<String> awards1 = [
@@ -156,7 +161,7 @@ class Data {
       trailingIcon: Icons.chevron_right,
     ),
     NimBusCardData(
-      title: StringConst.PHOTOGRAPHER,
+      title: StringConst.Andriod_app,
       subtitle: StringConst.PHOTOGRAPHER_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
@@ -193,7 +198,7 @@ class Data {
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.225,
     ),
@@ -205,7 +210,7 @@ class Data {
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
       width: 0.2375,
     ),
@@ -258,13 +263,13 @@ class Data {
   static List<ProjectData> webDesign = [
     ProjectData(
       title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.225,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
       width: 0.2375,
     ),
