@@ -32,7 +32,7 @@ class ImagePath {
   static const String DEV_ABOUT_ME = "$imageDir/meabout.jpg";
   static int index=0;
   // static const String DEV_ABOUT_ME = "$imageDir/dev_aboutme.png";
-  static  String me = index==0? "$imageDir/me.jpg":index==1? "$imageDir/1.png":index==2?"$imageDir/2.png":"$imageDir/3.png";
+  static  String me = index==0? "$imageDir/gifmaker_me.gif":index==1? "$imageDir/1.png":index==2?"$imageDir/2.png":"$imageDir/3.png";
   // static const String DEV_HEADER = "$imageDir/dev_header.png";
   // static const String DEV_AWARD = "$imageDir/dev_award.png";
   static const String DEV_AWARD = "$imageDir/dev_award.jpg";

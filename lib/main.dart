@@ -1,7 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:nimbus/const/app_theme.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:nimbus/view/home_page.dart';
 import 'package:nimbus/values/values.dart';
 // import 'dart:ui';

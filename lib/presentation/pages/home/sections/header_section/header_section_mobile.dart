@@ -99,7 +99,8 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                   ],
                 ),
                 Positioned(
-                  right: -(sizeOfBlobSm),
+                bottom: sizeOfBlobSm*0.05,
+                  right: -(sizeOfBlobSm * 0.5),
                   child: HeaderImage(
                     controller: _controller,
                     globeSize: sizeOfGoldenGlobe,
