@@ -118,36 +118,39 @@ class _ProjectItemState extends State<ProjectItem>
         
         onEnter: (e) => _mouseEnter(true),
         onExit: (e) => _mouseEnter(false),
-        child: Container(
-          child: Stack(
-            children: [
-              Image.asset(
-                widget.imageUrl,
-                width: widget.width,
-                height: widget.height,
-                fit: BoxFit.fill,
-              ),
-              Positioned(
-                bottom: 0,
-                child: FadeTransition(
-                  opacity: _fadeInAnimation,
-                  child: SlideTransition(
-                    position: _slideAnimation,
-                    child: ProjectCover(
-                      animation: _indicatorAnimation,
-                      color: widget.bannerColor ?? Colors.black.withOpacity(0.8),
-                      width: widget.width,
-                      height: widget.bannerHeight ?? widget.height / 3,
-                      title: widget.title,
-                      subtitle: widget.subtitle,
-                      titleStyle: widget.titleStyle,
-                      subtitleStyle: widget.subtitleStyle,
-                      isHover: _hovering,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            child: Stack(
+              children: [
+                Image.asset(
+                  widget.imageUrl,
+                  width: widget.width,
+                  height: widget.height,
+                  fit: BoxFit.fill,
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: FadeTransition(
+                    opacity: _fadeInAnimation,
+                    child: SlideTransition(
+                      position: _slideAnimation,
+                      child: ProjectCover(
+                        animation: _indicatorAnimation,
+                        color: widget.bannerColor ?? Colors.black.withOpacity(0.8),
+                        width: widget.width,
+                        height: widget.bannerHeight ?? widget.height / 3,
+                        title: widget.title,
+                        subtitle: widget.subtitle,
+                        titleStyle: widget.titleStyle,
+                        subtitleStyle: widget.subtitleStyle,
+                        isHover: _hovering,
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

@@ -123,12 +123,14 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                   ],
                 ),
                 Positioned(
-                  bottom: sizeOfBlobSm*0.05,
-                  right: -(sizeOfBlobSm * 0.5),
+                  right:0,
+                  top:0,
+                  // right: -(sizeOfBlobSm * 0.5),
                   child: HeaderImage(
                     controller: _controller,
                     globeSize: sizeOfGoldenGlobe,
                     imageHeight: heightOfStack,
+                    imageWidth: heightOfStack,
                   ),
                 ),
               ],

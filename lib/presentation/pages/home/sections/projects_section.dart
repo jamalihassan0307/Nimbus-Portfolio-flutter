@@ -38,10 +38,10 @@ class _ProjectsSectionState extends State<ProjectsSection>
   late Animation<double> _projectScaleAnimation;
   List<List<ProjectData>> projects = [
     Data.allProjects,
-    Data.branding,
-    Data.packaging,
+    Data.IOS,
+    Data.APIS,
     Data.photograhy,
-    Data.webDesign,
+    Data.DotNet,
   ];
   late List<ProjectData> selectedProject;
   late List<ProjectCategoryData> projectCategories;
@@ -190,6 +190,15 @@ class _ProjectsSectionState extends State<ProjectsSection>
                       children: _buildProjects(selectedProject),
                     ),
                   ),
+                  SpaceH40(),
+                   NimbusButton(
+                            buttonTitle: "SEE MORE",
+                            buttonColor: AppColors.primaryColor,
+                            onPressed: () {
+                          openUrlLink(StringConst.GITHUB_URL);    
+                            },
+                            
+                          ),
                 ],
               ),
             );

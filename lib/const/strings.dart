@@ -117,11 +117,11 @@
       static const String ALL_PROJECTS = "All Projects";
       static const String ALL = "All";
       static const String IOS = "IOS";
-      static const String APIS = "APIS";
-      static const String ChatGpt = "Chat Gpt";
+      static const String APIS1 = "APIS";
+      static const String ChatGpt2345 = "Chat Gpt";
       static const String DotNet = "ASP.Net";
       static const String ANDRIODAPP = "Andriod app";
-      static const String Flutter = "Flutter App";
+      static const String Flutter267 = "Flutter App";
       static const String PORTFOLIO_1_TITLE = "Doctor Appointment App";
       static const String PORTFOLIO_2_TITLE = "My Diary";
       static const String PORTFOLIO_3_TITLE = "Plant app";
