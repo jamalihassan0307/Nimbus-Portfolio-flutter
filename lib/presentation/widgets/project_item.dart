@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nimbus/presentation/widgets/spaces.dart';
+import 'package:nimbus/utils/functions.dart';
 import 'package:nimbus/values/values.dart';
 
 import 'animated_indicator.dart';
 
 class ProjectData {
+  final String link;
   final String projectCoverUrl;
   final String title;
   final String category;
@@ -14,6 +16,7 @@ class ProjectData {
   final double mobileHeight;
 
   ProjectData({
+    required this.link,
     required this.projectCoverUrl,
     required this.title,
     required this.category,
@@ -27,6 +30,7 @@ class ProjectData {
 class ProjectItem extends StatefulWidget {
   const ProjectItem({
     Key? key,
+    required this.link,
     required this.title,
     required this.subtitle,
     required this.imageUrl,
@@ -40,6 +44,7 @@ class ProjectItem extends StatefulWidget {
   }) : super(key: key);
 
   final String title;
+  final String link;
   final String subtitle;
   final TextStyle? titleStyle;
   final TextStyle? subtitleStyle;
@@ -107,39 +112,43 @@ class _ProjectItemState extends State<ProjectItem>
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      onEnter: (e) => _mouseEnter(true),
-      onExit: (e) => _mouseEnter(false),
-      child: Container(
-        child: Stack(
-          children: [
-            Image.asset(
-              widget.imageUrl,
-              width: widget.width,
-              height: widget.height,
-              fit: BoxFit.fill,
-            ),
-            Positioned(
-              bottom: 0,
-              child: FadeTransition(
-                opacity: _fadeInAnimation,
-                child: SlideTransition(
-                  position: _slideAnimation,
-                  child: ProjectCover(
-                    animation: _indicatorAnimation,
-                    color: widget.bannerColor ?? Colors.black.withOpacity(0.8),
-                    width: widget.width,
-                    height: widget.bannerHeight ?? widget.height / 3,
-                    title: widget.title,
-                    subtitle: widget.subtitle,
-                    titleStyle: widget.titleStyle,
-                    subtitleStyle: widget.subtitleStyle,
-                    isHover: _hovering,
+    return InkWell(
+      onTap:()=> openUrlLink(widget.link),
+      child: MouseRegion(
+        
+        onEnter: (e) => _mouseEnter(true),
+        onExit: (e) => _mouseEnter(false),
+        child: Container(
+          child: Stack(
+            children: [
+              Image.asset(
+                widget.imageUrl,
+                width: widget.width,
+                height: widget.height,
+                fit: BoxFit.fill,
+              ),
+              Positioned(
+                bottom: 0,
+                child: FadeTransition(
+                  opacity: _fadeInAnimation,
+                  child: SlideTransition(
+                    position: _slideAnimation,
+                    child: ProjectCover(
+                      animation: _indicatorAnimation,
+                      color: widget.bannerColor ?? Colors.black.withOpacity(0.8),
+                      width: widget.width,
+                      height: widget.bannerHeight ?? widget.height / 3,
+                      title: widget.title,
+                      subtitle: widget.subtitle,
+                      titleStyle: widget.titleStyle,
+                      subtitleStyle: widget.subtitleStyle,
+                      isHover: _hovering,
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

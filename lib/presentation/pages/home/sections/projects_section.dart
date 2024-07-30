@@ -97,40 +97,49 @@ class _ProjectsSectionState extends State<ProjectsSection>
         builder: (context, sizingInformation) {
           double screenWidth = sizingInformation.screenSize.width;
           if (screenWidth < (RefinedBreakpoints().tabletLarge)) {
-            return Container(
-              padding:
-                  EdgeInsets.symmetric(horizontal: getSidePadding(context)),
-              child: ContentArea(
-                width: contentAreaWidth,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _buildNimbusInfoSectionSm(),
-                    SpaceH40(),
-                    NimbusButton(
-                      buttonTitle: StringConst.ALL_PROJECTS,
-                      buttonColor: AppColors.primaryColor,
-                      onPressed: () {
-           openUrlLink(StringConst.GITHUB_URL);
-
-                      },
-                    ),
-                    SpaceH40(),
-                    Wrap(
-                      spacing: kSpacing,
-                      runSpacing: kRunSpacing,
-                      children: _buildProjectCategories(projectCategories),
-                    ),
-                    SpaceH40(),
-                    Wrap(
-                      runSpacing: assignHeight(context, 0.05),
-                      children: _buildProjects(
-                        selectedProject,
-                        isMobile: true,
+            return Center(
+              child: Container(
+                padding:
+                    EdgeInsets.symmetric(horizontal: getSidePadding(context)),
+                child: ContentArea(
+                  width: contentAreaWidth,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildNimbusInfoSectionSm(),
+                      SpaceH40(),
+                      NimbusButton(
+                        buttonTitle: StringConst.ALL_PROJECTS,
+                        buttonColor: AppColors.primaryColor,
+                        onPressed: () {
+                         openUrlLink(StringConst.GITHUB_URL);
+              
+                        },
                       ),
-                    ),
-                  ],
+                      SpaceH40(),
+                      Wrap(
+                        spacing: kSpacing,
+                        runSpacing: kRunSpacing,
+                        children: _buildProjectCategories(projectCategories),
+                      ),
+                      SpaceH40(),
+                      Wrap(
+                        spacing: 20,
+                      
+                        // spacing: 4,
+                        alignment:  WrapAlignment.center,
+                        verticalDirection: VerticalDirection.down,
+                        // crossAxisAlignment: WrapCrossAlignment.end,
+                        runSpacing: assignHeight(context, 0.05),
+                        children: _buildProjects(
+                          selectedProject,
+                          isMobile: true,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             );
@@ -206,10 +215,12 @@ class _ProjectsSectionState extends State<ProjectsSection>
       title1: StringConst.MEET_MY_PROJECTS,
       hasTitle2: false,
       body: StringConst.PROJECTS_DESC,
-      child: Wrap(
-        spacing: kSpacing,
-        runSpacing: kRunSpacing,
-        children: _buildProjectCategories(projectCategories),
+      child: Center(
+        child: Wrap(
+          spacing: kSpacing,
+          runSpacing: kRunSpacing,
+          children: _buildProjectCategories(projectCategories),
+        ),
       ),
     );
   }
@@ -237,6 +248,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
         ScaleTransition(
           scale: _projectScaleAnimation,
           child: ProjectItem(
+            link: data[index].link,
             width: isMobile
                 ? assignWidth(context, data[index].mobileWidth)
                 : assignWidth(context, data[index].width),

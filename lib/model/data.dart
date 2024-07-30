@@ -109,10 +109,10 @@ class Data {
 
   static List<ProjectCategoryData> projectCategories = [
     ProjectCategoryData(title: StringConst.ALL, number: 6, isSelected: true),
-    ProjectCategoryData(title: StringConst.BRANDING, number: 1),
-    ProjectCategoryData(title: StringConst.PACKAGING, number: 1),
-    ProjectCategoryData(title: StringConst.Andriod_app, number: 2),
-    ProjectCategoryData(title: StringConst.Flutter, number: 3),
+    ProjectCategoryData(title: StringConst.IOS, number: 0),
+    ProjectCategoryData(title: StringConst.APIS, number: 1),
+    ProjectCategoryData(title: StringConst.ChatGpt, number: 3),
+    ProjectCategoryData(title: StringConst.DotNet, number: 3),
   ];
 
   static List<String> awards1 = [
@@ -190,94 +190,131 @@ class Data {
 
   static List<ProjectData> allProjects = [
     ProjectData(
+      link:StringConst.port1,
       title: StringConst.PORTFOLIO_1_TITLE,
       category: StringConst.ANDRIODAPP,
-      projectCoverUrl: ImagePath.PORTFOLIO_1,
-      width: 0.5,
+      projectCoverUrl: ImagePath.PORTFOLIO_11,
+      width: 0.45,
       mobileHeight: 0.3,
     ),
-    ProjectData(
+    ProjectData(link:StringConst.port2,
       title: StringConst.PORTFOLIO_2_TITLE,
       category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
-      width: 0.225,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port3,
       title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
+      category: StringConst.IOS,
       projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
+     width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port4,
       title: StringConst.PORTFOLIO_4_TITLE,
       category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
-      width: 0.2375,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port5,
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
+      category: StringConst.APIS,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
+     width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port6,
       title: StringConst.PORTFOLIO_6_TITLE,
       category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
-      width: 0.475,
+      width: 0.45,
+      mobileHeight: 0.3,
+    ),
+    ProjectData(
+      link:StringConst.port6,
+      title: StringConst.PORTFOLIO_6_TITLE,
+      category: StringConst.ANDRIODAPP,
+      projectCoverUrl: ImagePath.PORTFOLIO_7,
+      width: 0.45,
+      mobileHeight: 0.3,
+    ),
+    ProjectData(
+      link:StringConst.port6,
+      title: StringConst.PORTFOLIO_6_TITLE,
+      category: StringConst.ANDRIODAPP,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.45,
       mobileHeight: 0.3,
     ),
   ];
   static List<ProjectData> branding = [
     ProjectData(
+      link:StringConst.port3,
       title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
+      category: StringConst.IOS,
       projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
   ];
   static List<ProjectData> packaging = [
     ProjectData(
+      link:StringConst.port5,
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
+      category: StringConst.APIS,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
   ];
   static List<ProjectData> photograhy = [
     ProjectData(
+      link:StringConst.port1,
       title: StringConst.PORTFOLIO_1_TITLE,
       category: StringConst.ANDRIODAPP,
-      projectCoverUrl: ImagePath.PORTFOLIO_1,
-      width: 0.5,
+      projectCoverUrl: ImagePath.PORTFOLIO_11,
+      width: 0.45,
       mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port6,
       title: StringConst.PORTFOLIO_6_TITLE,
       category: StringConst.ANDRIODAPP,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
-      width: 0.475,
+      width: 0.45,
       mobileHeight: 0.3,
     ),
   ];
   static List<ProjectData> webDesign = [
     ProjectData(
+      link:StringConst.port2,
       title: StringConst.PORTFOLIO_2_TITLE,
       category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
-      width: 0.225,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port4,
       title: StringConst.PORTFOLIO_4_TITLE,
       category: StringConst.Flutter,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
-      width: 0.2375,
+     width: 0.45,
+      mobileHeight: 0.3,
     ),
     ProjectData(
+      link:StringConst.port5,
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
+      category: StringConst.APIS,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
+      width: 0.45,
+      mobileHeight: 0.3,
     ),
   ];
 }

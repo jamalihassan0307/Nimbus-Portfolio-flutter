@@ -44,10 +44,12 @@ class ImagePath {
   static const String BLOG_03 = "$imageDir/blog_03.jpg";
 
   // Portfolio Images
-  static const String PORTFOLIO_1 = "$imageDir/portfolio_01.jpg";
-  static const String PORTFOLIO_2 = "$imageDir/portfolio_02.jpg";
-  static const String PORTFOLIO_3 = "$imageDir/portfolio_03.jpg";
-  static const String PORTFOLIO_4 = "$imageDir/portfolio_04.jpg";
-  static const String PORTFOLIO_5 = "$imageDir/portfolio_05.jpg";
-  static const String PORTFOLIO_6 = "$imageDir/portfolio_06.jpg";
+  static const String PORTFOLIO_11 = "$imageDir/11.png";
+  static const String PORTFOLIO_2 = "$imageDir/22.png";
+  static const String PORTFOLIO_3 = "$imageDir/33.png";
+  static const String PORTFOLIO_4 = "$imageDir/4.png";
+  static const String PORTFOLIO_5 = "$imageDir/5.png";
+  static const String PORTFOLIO_6 = "$imageDir/6.png";
+  static const String PORTFOLIO_7 = "$imageDir/7.png";
+  static const String PORTFOLIO_8 = "$imageDir/8.png";
 }

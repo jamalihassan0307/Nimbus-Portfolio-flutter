@@ -116,8 +116,10 @@
           "Flutter developer with 2 years of experience, specializing in Android, iOS, and web applications, and you excel in API integration.";
       static const String ALL_PROJECTS = "All Projects";
       static const String ALL = "All";
-      static const String BRANDING = "IOS";
-      static const String PACKAGING = "APIS";
+      static const String IOS = "IOS";
+      static const String APIS = "APIS";
+      static const String ChatGpt = "Chat Gpt";
+      static const String DotNet = "ASP.Net";
       static const String ANDRIODAPP = "Andriod app";
       static const String Flutter = "Flutter App";
       static const String PORTFOLIO_1_TITLE = "Doctor Appointment App";
@@ -212,4 +214,27 @@
           "https://portfolio-8ac79.firebaseapp.com/";
       static const String DESIGN_URL =
           "https://www.behance.net/gallery/95351691/Resume-Design-03";
+
+
+          /////////////////////portflio link   
+          ///
+          ///
+      static const String port1 =
+          "https://github.com/jamalihassan0307/Doctor-Appointment-App-with-sql";
+      static const String port2 =
+          "https://github.com/jamalihassan0307/Ludo-Fluter-For-FourPlayer-With-Provider-with-sound";
+      static const String port3 =
+          "https://github.com/jamalihassan0307/Furniture-App-Flutter";
+      static const String port4 =
+          "https://github.com/jamalihassan0307/Flutter-Cake-App";
+      static const String port5 =
+          "https://github.com/jamalihassan0307/Flutter-ChatGPT-Text-and-image-generater";
+      static const String port6 =
+          "https://github.com/jamalihassan0307/Flutter-Travel-App";
+      static const String port7 =
+          "https://github.com/jamalihassan0307/elderly-Exercisec-App-with-sqflite-database";
+      static const String port8 =
+          "https://github.com/jamalihassan0307/Flutter-Plant-App";
+
+           
     }

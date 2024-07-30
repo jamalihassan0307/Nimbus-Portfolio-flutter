@@ -143,7 +143,7 @@ Color responsiveColor(
 
 double getSidePadding(BuildContext context) {
   double width = MediaQuery.of(context).size.width;
-  double sidePadding = width * 0.05;
+  double sidePadding = width * 0.1;
   return responsiveSize(context, 30, sidePadding, md: sidePadding);
 }
 

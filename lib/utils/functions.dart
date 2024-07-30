@@ -7,7 +7,7 @@ const kDuration = Duration(milliseconds: 600);
 
 Future<void> openUrlLink(String url) async {
   if (await canLaunch(url)) {
-    await launch(
+    await launch( 
       url,
       forceSafariVC: false,
       forceWebView: false,
